@@ -42,7 +42,7 @@ def get_tweets(
         time.sleep(wait_between_requests)
 
     with open(output_json_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
+        json.dump(tweets, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":
